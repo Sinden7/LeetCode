@@ -1,0 +1,13 @@
+class Solution(object):
+    def numJewelsInStones(self, jewels, stones):
+        #jewels = 
+        #stones = 
+        counter = 0
+        stones = list(stones)
+
+        for index, character in enumerate(stones):
+            if stones[index] in jewels:
+                counter += 1
+
+        return counter
+        
